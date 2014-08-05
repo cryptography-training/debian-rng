@@ -1,0 +1,93 @@
+# Translators, if you are not familiar with the PO format, gettext
+# documentation is worth reading, especially sections dedicated to
+# this format, e.g. by running:
+# info -n '(gettext)PO Files'
+# info -n '(gettext)Header Entry'
+# Some information specific to po-debconf are available at
+# /usr/share/doc/po-debconf/README-trans
+# or http://www.debian.org/intl/l10n/po-debconf/README-trans
+# Developers do not need to manually edit POT or PO files.
+# , fuzzy
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openssl 0.9.7g-2\n"
+"Report-Msgid-Bugs-To: openssl@packages.debian.org\n"
+"POT-Creation-Date: 2008-01-16 21:40+0100\n"
+"PO-Revision-Date: 2007-04-11 10:05+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: string
+#. Description
+#: ../libssl0.9.8.templates:1001
+msgid "Services to restart to make them use the new libraries:"
+msgstr ""
+"Tjänster som ska startas om för att få dem att använda de nya biblioteken:"
+
+#. Type: string
+#. Description
+#: ../libssl0.9.8.templates:1001
+msgid ""
+"This release of OpenSSL fixes some security issues. Services will not use "
+"these fixes until they are restarted. Please note that restarting the SSH "
+"server (sshd) should not affect any existing connections."
+msgstr ""
+"Den här utgåvan av OpenSSL rättar till ett antal säkerhetsproblem. "
+"Tjänsterna kommer inte att använda dessa rättningar förrän de har startats "
+"om. Observera att omstart av SSH-servern (sshd) inte kommer att påverka "
+"befintliga anslutningar."
+
+#. Type: string
+#. Description
+#: ../libssl0.9.8.templates:1001
+msgid ""
+"Please check the list of detected services that need to be restarted and "
+"correct it, if needed. The services names must be identical to the "
+"initialization script names in /etc/init.d and separated by spaces. No "
+"services will be restarted if the list is empty."
+msgstr ""
+"Undersök listan över identifierade tjänster som behöver startas om och gör "
+"ändringar i den om det behövs. Tjänstenamnen måste vara identiska för "
+"initieringsskripten i /etc/init.d och måste separeras med blanksteg. Inga "
+"tjänster kommer att startas om om listan är tom."
+
+#. Type: string
+#. Description
+#: ../libssl0.9.8.templates:1001
+msgid ""
+"Any service that later fails unexpectedly after this upgrade should be "
+"restarted. It is recommended to reboot this host to avoid any SSL-related "
+"trouble."
+msgstr ""
+"Om andra tjänster senare börjar att få underliga problem efter denna "
+"uppgradering bör de startas om.  Vi rekommenderar att du startar om din "
+"dator för att undvika SSL-relaterade problem."
+
+#. Type: error
+#. Description
+#: ../libssl0.9.8.templates:2001
+msgid "Failure restarting some services for OpenSSL upgrade"
+msgstr ""
+
+#. Type: error
+#. Description
+#. This paragraph is followed by a (non translatable) paragraph containing
+#. a list of services that could not be restarted
+#: ../libssl0.9.8.templates:2001
+msgid ""
+"The following services could not be restarted for the OpenSSL library "
+"upgrade:"
+msgstr ""
+
+#. Type: error
+#. Description
+#: ../libssl0.9.8.templates:2001
+msgid ""
+"You will need to start these manually by running '/etc/init.d/<service> "
+"start'."
+msgstr ""
